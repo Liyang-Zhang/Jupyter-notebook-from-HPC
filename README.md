@@ -16,22 +16,28 @@ Writing default config to: /lustre/home/acct-medkwf/medkwf4/.jupyter/jupyter_not
 2. Open the config file, search for "NotebookApp.allow_password_change" and change it to NotebookApp.allow_password_change=False (**remove hashmark**)
 
 3. Set password
-> jupyter notebook password
-> Enter password:
-> Verify password:
-> [NotebookPasswordApp] Wrote hashed password to /lustre/home/acct-medkwf/medkwf4/.jupyter/jupyter_notebook_config.json
+```
+jupyter notebook password
+Enter password:
+Verify password:
+[NotebookPasswordApp] Wrote hashed password to /lustre/home/acct-medkwf/medkwf4/.jupyter/jupyter_notebook_config.json
+```
 A hashed password generated to the .json file
 
 4. Find the hashed password and insert it to "c.NotebookApp.password" in jupyter_notebook_config.py, remove hashmark
 
 5. Run jupyter notebook on server
-> jupyter notebook --no-browser --port=8888 --ip=0.0.0.0
+```
+jupyter notebook --no-browser --port=8888 --ip=0.0.0.0
+```
 no-browser not open browser on the server
 port can be any accessibale port
 
 6. Set server port mapping to the local computer
 Open cmd (win10):
-> ssh username@server_ip -L127.0.0.1:8000:127.0.0.1:8888
+```
+ssh username@server_ip -L127.0.0.1:8000:127.0.0.1:8888
+```
 map local port 8000 to the server port 8888, password is required
 
 7. Open local browser and type http://127.0.0.1:8000, use the password set in step 3
