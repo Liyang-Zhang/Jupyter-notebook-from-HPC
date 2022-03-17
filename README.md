@@ -9,9 +9,10 @@
 
 ## Solution
 1. Generate a configure file
-> jupyter notebook --generate-config
-> Writing default config to: /lustre/home/acct-medkwf/medkwf4/.jupyter/jupyter_notebook_config.py
-
+```
+jupyter notebook --generate-config
+Writing default config to: /lustre/home/acct-medkwf/medkwf4/.jupyter/jupyter_notebook_config.py
+```
 2. Open the config file, search for "NotebookApp.allow_password_change" and change it to NotebookApp.allow_password_change=False (**remove hashmark**)
 
 3. Set password
