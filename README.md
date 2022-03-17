@@ -1,7 +1,7 @@
 # Jupyter-notebook-from-HPC
 ## Environment setting for openning jupyter notebook locally from HPC or other servers
 
-## Environment: anaconda, jupyter notebook and installed on HPC
+## Environment: anaconda, jupyter notebook installed on HPC
 
 ## Problem description
 1. Cannot open Jupyter notebook on a browser from server.
